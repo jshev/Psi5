@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - ground
+  - aliensLog
+  - reportLog
+  - introNote
+  - demoNote
+  - key
+  - gun
+  - playerBullet
+  - alienBullet
+  - bomb
+  - doorLog
+  - tunnelCol
+  - al4
+  - al5
+  - al3
+  - al2
+  - al1
+  - 2al1
+  - 2al2
+  - 2al3
+  - 2al4
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Tier0
+    uniqueID: 2214490643
+    locked: 0
+  - name: Tie3
+    uniqueID: 1459168925
+    locked: 0
+  - name: Tier2
+    uniqueID: 3596460519
+    locked: 0
+  - name: Tier1
+    uniqueID: 627400589
+    locked: 0
+  - name: PlayerLayer
+    uniqueID: 3548175825
+    locked: 0
+  - name: foreground
+    uniqueID: 4074548117
+    locked: 0
