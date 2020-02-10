@@ -8,6 +8,7 @@ public class EndingScript : MonoBehaviour {
     private AudioSource SPEECH;
     private AudioSource elderAudio;
     private bool once;
+    private bool alreadyPlayed;
     private bool choiceMade;
     public AudioClip panic;
     public AudioClip blastOff;
@@ -20,6 +21,7 @@ public class EndingScript : MonoBehaviour {
         elderAudio = GetComponent<AudioSource>();
         once = false;
         choiceMade = false;
+        alreadyPlayed = false;
     }
 
     // Update is called once per frame
@@ -27,8 +29,11 @@ public class EndingScript : MonoBehaviour {
         if (Player.transform.position.x >= -13 && !once) {
             Player.GetComponent<PlayerMovement>().enabled = false;
             Player.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
-            //SPEECH.Play();
-            Invoke("reactivatePlayer", 5);
+            if (!alreadyPlayed) {
+                SPEECH.Play();
+                Invoke("reactivatePlayer", 47);
+                alreadyPlayed = true;
+             }
         }
         if (choiceMade) {
             Player.GetComponent<PlayerMovement>().enabled = false;

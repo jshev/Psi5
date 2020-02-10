@@ -38,16 +38,6 @@ public class PlayerMovement : MonoBehaviour {
     //public Animator myAnimator;
     float speed;
     public SpriteRenderer mySpriteRenderer;
-    private AudioSource myAS;
-    public AudioClip r1log;
-    public AudioClip al5;
-    public AudioClip al3;
-    public AudioClip al2;
-    public AudioClip al1;
-    public AudioClip twoal1;
-    public AudioClip twoal2;
-    public AudioClip twoal3;
-    public AudioClip twoal4;
 
     void Start () {
         //Movement
@@ -59,7 +49,6 @@ public class PlayerMovement : MonoBehaviour {
         jumpCharge = 1;
         jumpMax = 1;
         MaxY = 17;
-        myAS = GetComponent<AudioSource>();
 
         //Animation
         mySpriteRenderer = GetComponent<SpriteRenderer>();
@@ -188,7 +177,7 @@ public class PlayerMovement : MonoBehaviour {
             if (collide.gameObject.tag == "gun") {
                 collide.gameObject.SetActive(false);
                 armed = true;
-                PlayerPrefs.SetInt("Armed", 0);
+                PlayerPrefs.SetInt("Armed", 1);
             }
 
         if (collide.gameObject.tag == "alienBullet"){
@@ -196,58 +185,6 @@ public class PlayerMovement : MonoBehaviour {
             healthControl.decreaseHealth();
         }
 
-        if(collide.gameObject.tag == "al4")
-        {
-            collide.gameObject.SetActive(false);
-            playAudio(r1log);
-        }
-
-        if(collide.gameObject.tag == "al5")
-        {
-            collide.gameObject.SetActive(false);
-            playAudio(al5);
-        }
-
-        if(collide.gameObject.tag == "al3")
-        {
-            collide.gameObject.SetActive(false);
-            playAudio(al3);
-        }
-
-        if(collide.gameObject.tag == "al2")
-        {
-            collide.gameObject.SetActive(false);
-            playAudio(al2);
-
-        }
-
-        if(collide.gameObject.tag == "al1")
-        {
-            collide.gameObject.SetActive(false);
-            playAudio(al1);
-        }
-
-        if(collide.gameObject.tag == "2al1")
-        {
-            collide.gameObject.SetActive(false);
-            playAudio(twoal1);
-        }
-
-        if(collide.gameObject.tag == "2al2")
-        {
-            collide.gameObject.SetActive(false);
-            playAudio(twoal2);
-        }
-        if(collide.gameObject.tag == "2al3")
-        {
-            collide.gameObject.SetActive(false);
-            playAudio(twoal3);
-        }
-        if(collide.gameObject.tag == "2al4")
-        {
-            collide.gameObject.SetActive(false);
-            playAudio(twoal4);
-        }
     }
     // End of Interactions Block
 
@@ -264,20 +201,6 @@ public class PlayerMovement : MonoBehaviour {
             Instantiate(bulletRight, bulletPos, Quaternion.identity);
         }
 
-    }
-
-    void playAudio(AudioClip clippy)
-    {
-        // stop player movement, play audio, update PlayerPrefs, and 
-        // let player move again after 45 seconds
-       // gameObject.GetComponent<PlayerMovement>().enabled = false;
-        myAS.clip = clippy;
-        myAS.Play();
-        //Invoke("reactivatePlayer", 45);
-     //   Invoke("reactivatePlayer", 22);
-        //logNo = PlayerPrefs.GetInt("DemoLogs");
-        //logNo += 1;
-        //PlayerPrefs.SetInt("DemoLogs", logNo);
     }
 
 }
