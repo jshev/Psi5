@@ -2495,7 +2495,7 @@ GameObject:
   - component: {fileID: 374276225}
   - component: {fileID: 374276226}
   m_Layer: 0
-  m_Name: graveStone (10)
+  m_Name: T3Entry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4207,13 +4207,13 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 1.1867976
       objectReference: {fileID: 0}
-    - target: {fileID: 1596040848814244, guid: 1a1251a8b171e4b04b0f720809556ce5, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4344344765039506, guid: 1a1251a8b171e4b04b0f720809556ce5, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1596040848814244, guid: 1a1251a8b171e4b04b0f720809556ce5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a1251a8b171e4b04b0f720809556ce5, type: 3}
@@ -6154,7 +6154,7 @@ GameObject:
   - component: {fileID: 768694583}
   - component: {fileID: 768694584}
   m_Layer: 0
-  m_Name: graveStone (6)
+  m_Name: T2Entry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10136,7 +10136,7 @@ GameObject:
   - component: {fileID: 1257494204}
   - component: {fileID: 1257494205}
   m_Layer: 0
-  m_Name: graveStone
+  m_Name: T1Entry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12858,7 +12858,7 @@ GameObject:
   - component: {fileID: 1606900966}
   - component: {fileID: 1606900967}
   m_Layer: 0
-  m_Name: graveStone (11)
+  m_Name: T4Entry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
